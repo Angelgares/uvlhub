@@ -1,6 +1,6 @@
 name: "🐛 Bug Report"
 description: Create a new ticket for a bug.
-title: "🐛 [BUG] - <title>"
+placeholder: "[BUG]-<title>"
 labels:
   - "bug"
 body:
@@ -18,7 +18,7 @@ body:
     attributes:
       label: "Steps to Reproduce"
       description: Provide step-by-step instructions to reproduce the issue.
-      value: |
+      placeholder: |
         1. Go to '...'
         2. Click on '...'
         3. Scroll down to '...'
@@ -26,14 +26,21 @@ body:
     validations:
       required: true
 
-  - type: textarea
-    id: expected_actual
+    - type: textarea
+    id: expected_result
     attributes:
-      label: "Expected Result vs. Actual Result"
-      description: Describe what you expected to happen and what actually happened.
-      placeholder: |
-        Expected: The application should load the dashboard.
-        Actual: The application displays an error message and crashes.
+      label: "Expected result"
+      description: Describe in detail what you expected to happen. Please provide as much detail as possible.
+      placeholder: "E.g., The application should load the dashboard and display the user profile."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual_result
+    attributes:
+      label: "Actual result"
+      description: Describe in detail what actually happened. Please provide as much detail as possible.
+      placeholder: "E.g., The application displays an error message and crashes after loading the initial screen."
     validations:
       required: true
 
@@ -63,6 +70,7 @@ body:
     attributes:
       label: "Operating System"
       description: Select the operating system you're using.
+      multiple: true
       options:
         - Windows
         - Linux
