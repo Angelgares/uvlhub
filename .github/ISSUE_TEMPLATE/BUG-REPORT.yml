@@ -1,0 +1,63 @@
+name: Bug Report
+description: Report a bug or issue with the project
+title: "[Bug]: Brief description of the problem"
+labels: bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por tomarse el tiempo de completar este reporte de error. Asegúrese de proporcionar tanta información como sea posible para ayudarnos a resolver el problema.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Brief description (one-line) of the problem
+      placeholder: "E.g., The application crashes on startup."
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide step-by-step instructions to reproduce the issue.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+
+  - type: textarea
+    id: expected_actual
+    attributes:
+      label: Expected Result vs. Actual Result
+      description: Describe what you expected to happen and what actually happened.
+      placeholder: |
+        Expected: The application should load the dashboard.
+        Actual: The application displays an error message and crashes.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Select the priority level of this issue.
+      options:
+        - High
+        - Medium
+        - Low
+
+  - type: input
+    id: attachments
+    attributes:
+      label: Attachments
+      description: Provide any additional files or screenshots if necessary.
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Provide details about your environment (application version, operating system, browser, etc.)
+      placeholder: |
+        - Application version: 1.2.3
+        - Operating System: Windows 10
+        - Browser: Chrome 95
+        - Other details: ...
