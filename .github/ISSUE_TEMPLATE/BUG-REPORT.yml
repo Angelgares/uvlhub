@@ -72,7 +72,7 @@ body:
         - Linux
         - Mac
       validations:
-        required: true
+        required: false
 
   - type: dropdown
     id: browsers
@@ -87,7 +87,7 @@ body:
         - Microsoft Edge
         - Opera
       validations:
-        required: true
+        required: false
 
   - type: input
     id: app_version
