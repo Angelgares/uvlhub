@@ -101,6 +101,6 @@ body:
   - type: textarea
     id: other_details
     attributes:
-      label: "Other Environment Details"
+      label: "Other eenvironment details"
       description: Include any other relevant details about your environment.
       placeholder: "E.g., Plugins, network configuration, etc."
