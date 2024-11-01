@@ -46,8 +46,6 @@ body:
         - High
         - Medium
         - Low
-    validations:
-      required: true
 
   - type: textarea
     id: attachments
@@ -55,8 +53,6 @@ body:
       label: "Attachments"
       description: Provide any additional files or screenshots if necessary.
       placeholder: "Attach any relevant screenshots or files."
-    validations:
-      required: false
 
   - type: markdown
     attributes:
@@ -71,8 +67,6 @@ body:
         - Windows
         - Linux
         - Mac
-      validations:
-        required: false
 
   - type: dropdown
     id: browsers
@@ -86,8 +80,6 @@ body:
         - Safari
         - Microsoft Edge
         - Opera
-      validations:
-        required: false
 
   - type: input
     id: app_version
@@ -104,5 +96,3 @@ body:
       label: "Other Environment Details"
       description: Include any other relevant details about your environment.
       placeholder: "E.g., Plugins, network configuration, etc."
-    validations: 
-      required: false
